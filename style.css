@@ -1,0 +1,134 @@
+/* Reset default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Verdana', sans-serif;
+    background-color: #f2f2f2; /* Light pastel background */
+    color: #0000; /* Dark text color */
+    padding: 0;
+    margin: 0;
+}
+
+/* Introduction Section */
+#intro {
+    background-color: #FFC0CB; /* Soft pink background */
+    color: #0000; /* Dark purple text */
+    text-align: center;
+    padding: 80px 20px;
+}
+
+#intro h1 {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #6A0DAD; /* Violet color */
+}
+
+#intro p {
+    font-size: 1.2em;
+    color: #9B30FF; /* Light purple */
+}
+
+/* Hobbies Section */
+#hobbies {
+    background-color: #E0FFFF; /* Light cyan background */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#hobbies h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #8A2BE2; /* Blue-violet text color */
+}
+
+/* Hobby Boxes */
+.hobby-boxes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 0 40px;
+}
+
+.hobby-box {
+    background-color: #D8BFD8; /* Thistle color (light purple) */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.hobby-box p {
+    font-size: 1.5em;
+    color: #4B0082; /* Dark purple text */
+}
+
+.hobby-box:hover {
+    background-color: #E6A1D4; /* Soft pink hover effect */
+    transform: translateY(-5px); /* Slight upward movement */
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Contact Section */
+#contact {
+    background-color: #FFDEAD; /* Navajo white background */
+    text-align: center;
+    padding: 60px 20px;
+}
+
+#contact h2 {
+    font-size: 2.5em;
+    color: #800080; /* Purple color */
+}
+
+#contact p {
+    font-size: 1.2em;
+    color: #6A5ACD; /* Slate blue */
+}
+
+#contact a {
+    display: inline-block;
+    background-color: #4B0082; /* Deep purple background */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+#contact a:hover {
+    background-color: #800080; /* Hover effect on the button */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* Change grid to 1 column on smaller screens */
+    .hobby-boxes {
+        grid-template-columns: 1fr;
+    }
+
+    /* Adjust text sizes for smaller screens */
+    #intro h1 {
+        font-size: 2em;
+    }
+
+    #intro p {
+        font-size: 1.1em;
+    }
+
+    #hobbies h2 {
+        font-size: 2em;
+    }
+
+    #contact h2 {
+        font-size: 2em;
+    }
+}
